@@ -21,19 +21,19 @@ void loop()
   delay(50);
   for(pos = 0; pos <= 180; pos++)
   {
-     movement(valuePot);
+     movement();
   }
 
   delay(100);
   for(pos = 180; pos >= 0; pos--)
   {
-     movement(valuePot);
+     movement();
   }
 }
 
-void movement(int value)
+void movement()
 {
     s.write(pos);
-    delay(value);
+    delay(valuePot);
 }
 
