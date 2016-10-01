@@ -4,6 +4,8 @@ Projeto para ajudar a filmagens de Time Lapses, utilizando Arduino
 Objetivo: fazer qualquer smartphone virar 180º na horizontal, na velocidade determinada pelo usuário a partir do potenciômetro
 
 ![alt tag](https://github.com/LucasSoaress/TimelapseArduino/blob/master/images/image1.jpeg?raw=true)
+
+![alt tag](https://github.com/LucasSoaress/TimelapseArduino/blob/master/images/esquema.png)
 <h2>Finalização do projeto</h2>
 - confecionar suporte para encaixar o smartphone e assim poder movimentá-lo
 
