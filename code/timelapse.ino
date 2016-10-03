@@ -1,7 +1,7 @@
 #include <Servo.h>
 
 #define SERVO 8 // Porta Digital para o Servo
-#define POTENCIOMETRO A0 // Porta Digital para o Pot
+#define POTENCIOMETRO A0 // Porta Digital para o potênciometro
  
 Servo s; // Variável Servo
 int pos; // Posição Servo
@@ -10,7 +10,7 @@ int valuePot = 0; // Valor do potênciometro
  
 void setup ()
 {
-  s.attach(SERVO);
+  s.attach(SERVO); //Encontra o servo na placa arduino
 }
  
 void loop()
