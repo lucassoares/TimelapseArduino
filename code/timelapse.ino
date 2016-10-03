@@ -1,12 +1,12 @@
 #include <Servo.h>
- 
+
 #define SERVO 8 // Porta Digital para o Servo
-#define potPin A0 // Porta Digital para o Pot
+#define POTENCIOMETRO A0 // Porta Digital para o Pot
  
 Servo s; // Variável Servo
 int pos; // Posição Servo
 
-int valuePot; // Valor do potênciometro
+int valuePot = 0; // Valor do potênciometro
  
 void setup ()
 {
@@ -15,16 +15,11 @@ void setup ()
  
 void loop()
 {
-  valuePot =  analogRead(potPin);
-  valuePot = map(valuePot,0,1023,5,15); 
-  
-  delay(50);
   for(pos = 0; pos <= 180; pos++)
   {
      movement();
   }
 
-  delay(100);
   for(pos = 180; pos >= 0; pos--)
   {
      movement();
@@ -33,7 +28,7 @@ void loop()
 
 void movement()
 {
+    valuePot = map(analogRead(POTENCIOMETRO),0,1023,500,2500); //Faz regra de 3 para encontrar um valor entre 500 e 2500 baseado em valores entre 0 e 1023
     s.write(pos);
     delay(valuePot);
 }
-
