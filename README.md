@@ -16,7 +16,7 @@ Objetivo: fazer qualquer smartphone virar 180º na horizontal, na velocidade det
 - 1 protoboard
 - 1 servo motor
 - 1 potenciômetro
-- 8 jumpers
+- 8 fios jumpers
 
 <h3>Legenda para jumpers</h3>
 - vermelho = positivo
