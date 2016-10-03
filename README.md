@@ -22,7 +22,6 @@ Objetivo: fazer qualquer smartphone virar 180º na horizontal, na velocidade det
 - vermelho = positivo
 - preto = negativo
 - amarelo = digital
-- azul = digital
 
 
 <h2>Extras</h2>
