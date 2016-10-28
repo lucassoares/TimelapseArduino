@@ -1,4 +1,4 @@
-# Time Lapse Arduino - Mostra Geração
+# Time Lapse Arduino
 Projeto para ajudar a filmagens de Time Lapses, utilizando Arduino
 
 Objetivo: fazer qualquer smartphone virar 180º na horizontal, na velocidade determinada pelo usuário a partir do potenciômetro
