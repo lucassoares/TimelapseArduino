@@ -1,16 +1,16 @@
 #include <Servo.h>
 
-#define SERVO 8 // Porta Digital para o Servo
-#define POTENCIOMETRO A0 // Porta Digital para o potênciometro
+#define SERVO 8
+#define POTENCIOMETRO A0
  
-Servo s; // Variável Servo
-int pos; // Posição Servo
+Servo s;
+int pos;
 
-int valuePot = 0; // Valor do potênciometro
+int valuePot = 0; 
  
 void setup ()
 {
-  s.attach(SERVO); //Encontra o servo na placa arduino
+  s.attach(SERVO);
 }
  
 void loop()
@@ -28,7 +28,7 @@ void loop()
 
 void movement()
 {
-    valuePot = map(analogRead(POTENCIOMETRO),0,1023,500,2500); //Faz regra de 3 para encontrar um valor entre 500 e 2500 baseado em valores entre 0 e 1023
+    valuePot = map(analogRead(POTENCIOMETRO),0,1023,500,2500);
     s.write(pos);
     delay(valuePot);
 }
